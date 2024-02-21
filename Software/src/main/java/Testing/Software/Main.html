@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selenium Testing</title>
+</head>
+<body>
+<form id="myForm">
+    <fieldset>
+        <legend>Radio Group 1:</legend>
+        <input type="radio" name="group1" value="Mango" id="mango"> <label for="mango">Mango</label>
+        <input type="radio" name="group1" value="Watermelon" id="watermelon"> <label for="watermelon">Watermelon</label>
+        <input type="radio" name="group1" value="Banana" id="banana"> <label for="banana">Banana</label>
+    </fieldset>
+    <hr>
+    <fieldset>
+        <legend>Checkbox</legend>
+        <input type="checkbox" name="confirm" value="true" id="confirm"> <label for="confirm">Confirm</label>
+    </fieldset>
+    <hr>
+    <label for="dropdown">Drop-Down Select:</label>
+    <select id="dropdown" name="dropdown">
+        <option value="Option1">Option1</option>
+        <option value="Option2">Option2</option>
+        <option value="Option3">Option3</option>
+    </select>
+    <br>
+    <hr>
+</form>
+
+<script>
+    document.getElementById("alertButton").addEventListener("click", function() {
+        alert("Test Alert!");
+    });
+
+    document.getElementById("windowButton").addEventListener("click", function() {
+        window.open('http://www.google.com');
+    });
+
+    document.getElementById("executor").addEventListener("click", function() {
+        alert("JavaScript Executor Test");
+    });
+</script>
+</body>
+</html>
